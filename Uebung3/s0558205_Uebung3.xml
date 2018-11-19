@@ -1,0 +1,60 @@
+<?xml version="1.0"? encoding="utf-8"?>
+<mainBooking>
+	<booking>	
+			<customer>
+				<customerid>123456</customerid>
+				<firstname>John</firstname>
+				<lastname>Deer</lastname>
+				<birthday>1980-06-30</birthday>
+			</customer>
+			
+			<address>
+				<street>Jefferson Street</street>
+				<number>5678</number>
+				<zip>49058</zip>
+				<city>New York</city>
+				<country>United States</country>
+			</address>
+
+			<flightdata>
+				<flightnumber>LH1234</flightnumber>
+				<price>746.46</price>
+				<roundtrip>false</roundtrip>
+				<flightdate>2019-01-02</flightdate>
+				<departure>07:05:00</departure>
+				<arrival>09:26:00</arrival>
+				<duration>08:21:00</duration>
+				<orign>Berlin TXL</orign>
+				<destination>New York NYC</destination>
+				<percentageDelay>1.362</percentageDelay>
+			</flightdata>
+	</booking>
+	<booking>
+			<customer>
+				<customerid>567890</customerid>
+				<firstname>Max</firstname>
+				<lastname>Mustermann</lastname>
+				<birthday>1981-07-31</birthday>
+			</customer>
+
+			<address>
+				<street>Main Street</street>
+				<number>1234</number>
+				<zip>49058</zip>
+				<city>New York</city>
+				<country>United States</country>
+			</address> 
+			<flightdata>
+				<flightnumber>LH1234</flightnumber>
+				<price>746.46</price>
+				<roundtrip>false</roundtrip>
+				<flightdate>2019-01-02</flightdate>
+				<departure>07:05:00</departure>
+				<arrival>09:26:00</arrival>
+				<duration>08:21:00</duration>
+				<orign>Berlin TXL</orign>
+				<destination>New York NYC</destination>
+				<percentageDelay>1.362</percentageDelay>
+			</flightdata>
+	</booking>
+</mainBooking>

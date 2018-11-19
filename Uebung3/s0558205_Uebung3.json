@@ -1,0 +1,60 @@
+{
+	"MainBooking":{
+		"-xmlns:xs" : "http://www.w3.org/2001/XMLSchema"
+		"Booking":[
+			{
+			  "customer": {
+				"customerid" : "123456",
+				"firstname" : "John",
+				"lastname" : "Deer",
+				"birthday" : "30.06.1980"
+			  },
+			  "adress": {
+				"street": "Jefferson Street",
+				"number": "5678",
+				"zip": "49058",
+				"city": "New York",
+				"country": "United States"
+			  },
+			  "flightdata": {
+				"flightnumber": "LH1234",
+				"price": "746.46",
+				"roundtrip": "false",
+				"departure": "07:05:00",
+				"arrival": "09:26:00",
+				"duration": "8:21:00",
+				"orign" : "Berlin TXL",
+				"destination" : "New York NYC",
+				"percentageDelay" : "1.362"
+			  }
+			},
+			{
+				"customer": {
+				"customerid" : "567890",
+				"firstname" : "Max",
+				"lastname" : "Mustermann",
+				"birthday" : "31.07.1981"
+			  },
+			  "adress": {
+				"street": "Main Street",
+				"number": "1234",
+				"zip": "49058",
+				"city": "New York",
+				"country": "United States"
+			  },
+			  "flightdata": {
+				"flightnumber": "LH1234",
+				"price": "746.46",
+				"roundtrip": "false",
+				"departure": "07:05:00",
+				"arrival": "09:26:00",
+				"duration": "8:21:00",
+				"orign" : "Berlin TXL",
+				"destination" : "New York NYC",
+				"percentageDelay" : "1.362"
+			  }
+			}
+		]
+
+	}
+}

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified">
+   <xs:element name="firstname" type="xs:string" />
+   <xs:element name="lastname" type="xs:string" />
+   <xs:element name="birthday" type="xs:date" />
+   <xs:element name="street" type="xs:string" />
+   <xs:element name="number" type="xs:integer" />
+   <xs:element name="zip" type="xs:integer" />
+   <xs:element name="city" type="xs:string" />
+   <xs:element name="country" type="xs:string" />
+   <xs:element name="customerid" type="xs:integer"/>
+   <xs:element name="flightnumber" type="xs:string"/>
+   <xs:element name="orign" type="xs:string" />
+   <xs:element name="destination" type="xs:string" />
+   <xs:element name="price" type="xs:decimal" />
+   <xs:element name="roundtrip" type="xs:boolean" />
+   <xs:element name="flightdate" type="xs:date" />
+   <xs:element name="departure" type="xs:time" />
+   <xs:element name="arrival" type="xs:time" />
+   <xs:element name="duration" type="xs:time" />
+   <xs:element name="percentageDelay" type="xs:float" />
+   <xs:element name="mainBooking">
+      <xs:complexType>
+         <xs:sequence>
+            <xs:element name="booking" maxOccurs="unbounded" minOccurs="0">
+               <xs:complexType>
+                  <xs:sequence>
+                     <xs:element name="customer">
+                        <xs:complexType>
+                           <xs:sequence minOccurs="1" maxOccurs="1">
+                              <xs:element ref="customerid" />
+                              <xs:element ref="firstname" />
+                              <xs:element ref="lastname" />
+                              <xs:element ref="birthday" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+                     <xs:element name="address">
+                        <xs:complexType>
+                           <xs:sequence minOccurs="1" maxOccurs="1">
+                              <xs:element ref="street" />
+                              <xs:element ref="number" />
+                              <xs:element ref="zip" />
+                              <xs:element ref="city" />
+                              <xs:element ref="country" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+                     <xs:element name="flightdata">
+                        <xs:complexType>
+                           <xs:sequence minOccurs="1" maxOccurs="1">
+                              <xs:element ref="flightnumber" />
+                              <xs:element ref="price" />
+                              <xs:element ref="roundtrip" />
+                              <xs:element ref="flightdate" />
+                              <xs:element ref="departure" />
+                              <xs:element ref="arrival" />
+                              <xs:element ref="duration" />
+                              <xs:element ref="orign" />
+                              <xs:element ref="destination" />
+                              <xs:element ref="percentageDelay" />
+                           </xs:sequence>
+                        </xs:complexType>
+                     </xs:element>
+                  </xs:sequence>
+               </xs:complexType>
+            </xs:element>
+         </xs:sequence>
+      </xs:complexType>
+   </xs:element>
+</xs:schema>
